@@ -1,7 +1,7 @@
 const ContributionsContent = () => (
-  <div className="content bg-light">
-    <div className="card-content bg-transparent-grey">
-      <header className="header-top"> CONTRIBUTIONS </header>
+  <div className="contribution-content">
+    <div className="card-content bg-transparent box-shadow">
+      <header className="header-top custom-secondary"> CONTRIBUTIONS </header>
       <ul>
         <li>
           Speaker in “Seeking Out Tech Career
@@ -25,8 +25,8 @@ const ContributionsContent = () => (
         </li>
       </ul>
     </div>
-    <div className="card-content bg-transparent-grey">
-      <header className="header-top"> PUBLICATIONS </header>
+    <div className="card-content bg-transparent box-shadow">
+      <header className="header-top custom-secondary"> PUBLICATIONS </header>
       <ul>
         <li>
           “Relief Food Supply Network Simulation“, IEEE

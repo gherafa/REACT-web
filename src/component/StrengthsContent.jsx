@@ -1,5 +1,6 @@
 const StrengthsContent = () => (
-  <div className="single-card-content bg-transparent-grey">
+  <div className="single-card-content bg-transparent box-shadow">
+    <header className="header-top custom-secondary">Core Strengths</header>
     <ul>
       <li>
         Time management: Able to meet and achieve the
