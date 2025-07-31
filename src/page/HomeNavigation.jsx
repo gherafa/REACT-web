@@ -34,21 +34,15 @@ class HomeNavigation extends React.PureComponent {
     } = this.state;
 
     return (
-      <div className="content bg-dark">
+      <div className="content">
         <div className="section-1">
           <div className="content-navigation">
-            <a href="#" onClick={() => this.setState({ ...this.initialState, isSummarySection: true })} className="content-navigation-item white" style={ isSummarySection ? {backgroundColor: 'goldenrod'}: 
-              { backgroundColor: '#304D63'}}>SUMMARY</a>
-            <a href="#" onClick={() => this.setState({ ...this.initialState, isExperienceSection: true })} className="content-navigation-item white" style={ isExperienceSection ? {backgroundColor: 'goldenrod'}: 
-              { backgroundColor: '#304D63'}}>EXPERIENCES</a>
-            <a href="#" onClick={() => this.setState({ ...this.initialState, isEducationContent: true })} className="content-navigation-item white" style={ isEducationContent ? {backgroundColor: 'goldenrod'}: 
-              { backgroundColor: '#304D63'}}>EDUCATIONS</a>
-            <a href="#" onClick={() => this.setState({ ...this.initialState, isStrengthsContent: true })} className="content-navigation-item white" style={ isStrengthsContent ? {backgroundColor: 'goldenrod'}: 
-              { backgroundColor: '#304D63'}}>STRENGTHS</a>
-            <a href="#" onClick={() => this.setState({ ...this.initialState, isSkillsContent: true })}className="content-navigation-item white" style={ isSkillsContent ? {backgroundColor: 'goldenrod'}: 
-              { backgroundColor: '#304D63'}}>SKILLS</a>
-            <a href="#" onClick={() => this.setState({ ...this.initialState, isContributionsContent: true })} className="content-navigation-item white" style={ isContributionsContent ? {backgroundColor: 'goldenrod'}: 
-              { backgroundColor: '#304D63'}}>CONTRIBUTIONS & PUBLICATIONS</a>
+            <a href="#" onClick={() => this.setState({ ...this.initialState, isSummarySection: !isSummarySection })} className="content-navigation-item white" style={ isSummarySection ? {backgroundColor: 'goldenrod'} : {}}>SUMMARY</a>
+            <a href="#" onClick={() => this.setState({ ...this.initialState, isExperienceSection: !isExperienceSection })} className="content-navigation-item white" style={ isExperienceSection ? {backgroundColor: 'goldenrod'}: {}}>EXPERIENCES</a>
+            <a href="#" onClick={() => this.setState({ ...this.initialState, isEducationContent: !isEducationContent })} className="content-navigation-item white" style={ isEducationContent ? {backgroundColor: 'goldenrod'}: {}}>EDUCATIONS</a>
+            <a href="#" onClick={() => this.setState({ ...this.initialState, isStrengthsContent: !isStrengthsContent })} className="content-navigation-item white" style={ isStrengthsContent ? {backgroundColor: 'goldenrod'}: {}}>STRENGTHS</a>
+            <a href="#" onClick={() => this.setState({ ...this.initialState, isSkillsContent: !isSkillsContent })}className="content-navigation-item white" style={ isSkillsContent ? {backgroundColor: 'goldenrod'}: {}}>SKILLS</a>
+            <a href="#" onClick={() => this.setState({ ...this.initialState, isContributionsContent: !isContributionsContent })} className="content-navigation-item white" style={ isContributionsContent ? {backgroundColor: 'goldenrod'}: {}}>CONTRIBUTIONS & PUBLICATIONS</a>
           </div>
         </div>
         <div className="section-2">

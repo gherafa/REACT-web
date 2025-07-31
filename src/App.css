@@ -112,6 +112,55 @@
   background-position: center center;
 }
 
+.content-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 1200px;
+  background-image: url(./Assets/bgImage1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  align-items: center;
+}
+
+.card-column {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 2%;
+  overflow: hidden;
+  height: 20%;
+  margin: 10px;
+  top: 7%;
+  padding: 2%
+}
+
+.card-column-head {
+  display: flex;
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2%;
+  overflow: hidden;
+  height: 100%;
+  margin: 10px;
+  padding: 2%
+}
+
+.card-column-body {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2%;
+  overflow: hidden;
+  height: 70%;
+  margin: 10px;
+}
+
 .section-1 {
   display: flex;
   width: 20%;
@@ -271,6 +320,15 @@
   align-items: center;
 }
 
+.modal-content {
+  display: flex;
+  width: 80%;
+  height: 80%;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
 .small-card {
   display: flex;
   width: 100%;
@@ -278,4 +336,34 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+}
+
+.top-right-element {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.top-right-element:hover {
+  transition: all 0.5s ease 0s;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: goldenrod;
+}
+
+.html-wrapper {
+  display: flex;
+  justify-content: center;  /* Horizontal center */
+  align-items: center;      /* Vertical center */
+  height: 100vh;            /* Full screen height */
+  width: 100%;
+  background-color: #f0f0f0; /* Optional background */
+}
+
+.html-content {
+  text-align: center;        /* Center inline text/content */
+  max-width: 800px;          /* Optional: limit width */
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
