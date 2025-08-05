@@ -37,12 +37,48 @@ class HomeNavigation extends React.PureComponent {
       <div className="content">
         <div className="section-1">
           <div className="content-navigation">
-            <a href="#" onClick={() => this.setState({ ...this.initialState, isSummarySection: !isSummarySection })} className="content-navigation-item white" style={ isSummarySection ? {backgroundColor: 'goldenrod'} : {}}>SUMMARY</a>
-            <a href="#" onClick={() => this.setState({ ...this.initialState, isExperienceSection: !isExperienceSection })} className="content-navigation-item white" style={ isExperienceSection ? {backgroundColor: 'goldenrod'}: {}}>EXPERIENCES</a>
-            <a href="#" onClick={() => this.setState({ ...this.initialState, isEducationContent: !isEducationContent })} className="content-navigation-item white" style={ isEducationContent ? {backgroundColor: 'goldenrod'}: {}}>EDUCATIONS</a>
-            <a href="#" onClick={() => this.setState({ ...this.initialState, isStrengthsContent: !isStrengthsContent })} className="content-navigation-item white" style={ isStrengthsContent ? {backgroundColor: 'goldenrod'}: {}}>STRENGTHS</a>
-            <a href="#" onClick={() => this.setState({ ...this.initialState, isSkillsContent: !isSkillsContent })}className="content-navigation-item white" style={ isSkillsContent ? {backgroundColor: 'goldenrod'}: {}}>SKILLS</a>
-            <a href="#" onClick={() => this.setState({ ...this.initialState, isContributionsContent: !isContributionsContent })} className="content-navigation-item white" style={ isContributionsContent ? {backgroundColor: 'goldenrod'}: {}}>CONTRIBUTIONS & PUBLICATIONS</a>
+            <div
+              onClick={() => this.setState({ ...this.initialState, isSummarySection: !isSummarySection })}
+              className="home-navigation-item-short box-shadow font-header"
+              style={ isSummarySection ? {backgroundColor: 'goldenrod', width: '98%'} : {}}
+            >
+              SUMMARY
+            </div>
+            <div
+              onClick={() => this.setState({ ...this.initialState, isExperienceSection: !isExperienceSection })}
+              className="home-navigation-item-short box-shadow font-header"
+              style={ isExperienceSection ? {backgroundColor: 'goldenrod', width: '98%'} : {}}
+            >
+              EXPERIENCES
+            </div>
+            <div
+              onClick={() => this.setState({ ...this.initialState, isEducationContent: !isEducationContent })}
+              className="home-navigation-item-short box-shadow font-header"
+              style={ isEducationContent ? {backgroundColor: 'goldenrod', width: '98%'} : {}}
+            >
+              EDUCATIONS
+            </div>
+            <div
+              onClick={() => this.setState({ ...this.initialState, isStrengthsContent: !isStrengthsContent })}
+              className="home-navigation-item-short box-shadow font-header"
+              style={ isStrengthsContent ? {backgroundColor: 'goldenrod', width: '98%'} : {}}
+            >
+              STRENGTHS
+            </div>
+            <div
+              onClick={() => this.setState({ ...this.initialState, isSkillsContent: !isSkillsContent })}
+              className="home-navigation-item-short box-shadow font-header"
+              style={ isSkillsContent ? {backgroundColor: 'goldenrod', width: '98%'} : {}}
+            >
+              SKILLS
+            </div>
+            <div
+              onClick={() => this.setState({ ...this.initialState, isContributionsContent: !isContributionsContent })}
+              className="home-navigation-item-short box-shadow font-header"
+              style={ isContributionsContent ? {backgroundColor: 'goldenrod', width: '98%'} : {}}
+            >
+              CONTRIBUTIONS
+            </div>
           </div>
         </div>
         <div className="section-2">

@@ -17,15 +17,6 @@ const PastWorks = () => {
   return (
     <div className="content-column">
       {!isPreview ?
-        // <>
-        //   <div className="card-column bg-transparent box-shadow">
-        //     <div className="card-column-head bg-transparent box-shadow font-header" onClick={onClickItem('RELIEF_OPS')}>Relief-Ops Research Team</div>
-        //     <div className="card-column-head bg-transparent box-shadow font-header" onClick={onClickItem('CHIP')}>CHIP MT Program</div>
-        //     <div className="card-column-head bg-transparent box-shadow font-header">JENIUS FE</div>
-        //     <div className="card-column-head bg-transparent box-shadow font-header">JENIUS BE</div>
-        //   </div>
-        //   <div className="card-column-body bg-transparent box-shadow" />
-        // </> 
         <>
           <div className="card-column-2-section">
             <div 
