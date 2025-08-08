@@ -32,9 +32,10 @@ class HomeNavigation extends React.PureComponent {
       isEducationContent,
       isSkillsContent
     } = this.state;
+    const { onHover } = this.props;
 
     return (
-      <div className="content">
+      <div className={`content ${onHover ? 'blur' : ''}`}>
         <div className="section-1">
           <div className="content-navigation">
             <div

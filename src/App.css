@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin-top: -1%
 }
 
 .App-logo {
@@ -35,6 +36,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.custom-navbar {
+  padding-top: 1%;
+  /* background-image: url(./Assets/bgImage1.jpg); */
+  background-color: whitesmoke;
 }
 
 .navigation-bar {
@@ -112,6 +119,12 @@
   background-position: center center;
 }
 
+.content.blur {
+  filter: blur(5px);
+  transition-delay: 0.35s;
+  transition: 'all 0.5s ease 0s';
+}
+
 .content-column {
   display: flex;
   flex-direction: column;
@@ -122,6 +135,12 @@
   background-repeat: no-repeat;
   background-position: center center;
   align-items: center;
+}
+
+.content-column.blur {
+  filter: blur(8px);
+  transition-delay: 0.35s;
+  transition: 'all 0.5s  ease 0s';
 }
 
 .card-column {
@@ -179,6 +198,41 @@
   height: 40%;
   margin: 10px;
   flex-direction: row;
+}
+
+.card-column-2-section-high {
+  display: flex;
+  width: 98%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2%;
+  overflow: hidden;
+  height: 98%;
+  margin: 10px;
+  flex-direction: row;
+}
+
+.card-column-2-section-high-container {
+  display: flex;
+  width: 23%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2%;
+  overflow: hidden;
+  height: 90%;
+  margin: 10px;
+  flex-direction: column;
+}
+
+.card-column-2-section-high-item {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 2%;
+  overflow: hidden;
+  height: 100%;
+  flex-direction: column;
 }
 
 .card-column-4-section {

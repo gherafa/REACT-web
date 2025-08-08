@@ -4,8 +4,9 @@ import ChipContent from "../component/ChipContent";
 
 import cropGui from '../Assets/cropGui.jpg';
 import program from '../Assets/program.jpg';
+import FrontendContent from "../component/FrontendContent";
 
-const PastWorks = () => {
+const PastWorks = ({onHover}) => {
   const [ isPreview, setPreview ] = React.useState(false);
   const [ content, setContent ] = React.useState('');
 
@@ -15,7 +16,7 @@ const PastWorks = () => {
   };
 
   return (
-    <div className="content-column">
+    <div className={`content-column ${onHover ? 'blur' : ''}`}>
       {!isPreview ?
         <>
           <div className="card-column-2-section">
@@ -24,25 +25,31 @@ const PastWorks = () => {
               className="card-column-4-section box-shadow font-title white"
               onClick={onClickItem('RELIEF_OPS')}
             >
-              Relief-Ops Research Team
+              <p>Relief-Ops Research Team</p>
             </div>
             <div
               style={{backgroundImage: `url(${program})`, backgroundPosition: 'center'}}
               className="card-column-4-section box-shadow font-title white"
               onClick={onClickItem('CHIP')}
             >
-              CHIP MT Program
+              <p>CHIP MT Program</p>
             </div>
           </div>
           <div className="card-column-2-section">
-            <div className="card-column-4-section box-shadow font-title custom-secondary">JENIUS FE</div>
-            <div className="card-column-4-section box-shadow font-title custom-secondary">JENIUS BE</div>
+            <div
+              className="card-column-4-section box-shadow font-title custom-secondary"
+              onClick={onClickItem('FRONT_END')}
+            >
+              SMBC BANK (Front End)
+            </div>
+            <div className="card-column-4-section box-shadow font-title custom-secondary">SMBC BANK (Back End)</div>
           </div>
         </>
         :
         <> 
           { content === 'RELIEF_OPS' && (<ReliefOpsContent setPreview={setPreview} /> )}
           { content === 'CHIP' && (<ChipContent setPreview={setPreview} /> )}
+          { content === 'FRONT_END' && (<FrontendContent setPreview={setPreview} /> )}
         </> 
       }
     </div>
