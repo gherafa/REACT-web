@@ -60,6 +60,10 @@
   color: rgba(0, 136, 169, 1);
 }
 
+.bg-custom-secondary-t {
+  background-color: rgba(0, 136, 169, 0.5);
+}
+
 .navigation-bar li {
   display: inline-flex;
   padding: 0px 20px;
@@ -607,4 +611,9 @@
 
 .bg-gold-t {
   background-color: rgba(255, 215, 0, 0.5); 
+}
+
+.wrapped-radius {
+  border-radius: 30px;
+  padding: 9px
 }

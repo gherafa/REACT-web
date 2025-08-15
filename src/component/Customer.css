@@ -1,0 +1,153 @@
+.customer-information {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+  justify-content: center;
+}
+
+.customer-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-family: Arial, sans-serif;
+  height: 28%;
+  width: 100%;
+  text-align: left;
+}
+
+.information-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-family: Arial, sans-serif;
+  height: 80%;
+  width: 100%;
+}
+
+.transaction-item.in {
+  background: #e8f8f0; /* light green background */
+  color: #1b7d46;
+  padding-right: 13%;
+}
+
+.transaction-item.out {
+  background: #fdecea; /* light red background */
+  color: #a94442;
+}
+
+.transaction-type {
+  font-weight: bold;
+}
+
+.transaction-amount {
+  font-weight: 600;
+}
+
+.transaction-desc {
+  font-size: 13px;
+  color: #555;
+}
+
+.transaction-item:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.customer-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+
+.customer-name {
+  font-size: 30px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.customer-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #555;
+  flex-direction: column;
+}
+
+.customer-info span {
+  background: #f5f7fa;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.empty-table {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f9fafb;
+  border: 2px dashed #d0d7de;
+  border-radius: 12px;
+  font-family: Arial, sans-serif;
+  color: #555;
+  margin-top: 20px;
+  height: 95%;
+}
+
+.empty-icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.empty-message {
+  font-size: 15px;
+  font-weight: 500;
+  color: #666;
+}
+
+.customer-card button {
+  background-color: #007bff;      /* Primary blue */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+  margin-right: 5px;
+  padding: 7px;
+}
+
+.customer-card button:hover {
+  background-color: #0056b3;     /* Darker on hover */
+  transform: translateY(-1px);
+}
+
+.customer-card button:active {
+  transform: translateY(1px);
+}
+
+.customer-card button:nth-of-type(2) {
+  background-color: #28a745;     /* Green for Loan */
+}
+
+.customer-card button:nth-of-type(2):hover {
+  background-color: #1f7f34;     /* Darker green hover */
+}
+

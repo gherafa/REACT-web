@@ -7,6 +7,7 @@ import gIcon from './Assets/gIcon.png';
 import React from 'react';
 import AppStyle from './App.styles';
 import NavbarPopup from './component/navbar/NavbarPopup';
+import Transfer from './page/Transfer';
 
 const App = () => {
   const [onHover, setOnHover] = React.useState(false);
@@ -61,7 +62,7 @@ const App = () => {
      <Routes>
       <Route path="/" element={<HomeNavigation onHover={onHover}/>} />
       <Route path="/pastProject" element={<PastWorks onHover={onHover}/>} />
-      <Route path="/myWorks" element={<HomePage />} />
+      <Route path="/myWorks" element={<Transfer />} />
       <Route path="/profile" element={<p>profile</p>} />
     </Routes>
    </div>

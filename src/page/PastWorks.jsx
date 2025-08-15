@@ -4,7 +4,10 @@ import ChipContent from "../component/ChipContent";
 
 import cropGui from '../Assets/cropGui.jpg';
 import program from '../Assets/program.jpg';
+import frontend from '../Assets/frontend.jpg';
+import logoJenius from '../Assets/backend.webp';
 import FrontendContent from "../component/FrontendContent";
+import BackendContent from "../component/BackendContent";
 
 const PastWorks = ({onHover}) => {
   const [ isPreview, setPreview ] = React.useState(false);
@@ -25,24 +28,31 @@ const PastWorks = ({onHover}) => {
               className="card-column-4-section box-shadow font-title white"
               onClick={onClickItem('RELIEF_OPS')}
             >
-              <p>Relief-Ops Research Team</p>
+              <p className="bg-gold-t wrapped-radius">Relief-Ops Research Team</p>
             </div>
             <div
               style={{backgroundImage: `url(${program})`, backgroundPosition: 'center'}}
               className="card-column-4-section box-shadow font-title white"
               onClick={onClickItem('CHIP')}
             >
-              <p>CHIP MT Program</p>
+              <p className="bg-gold-t wrapped-radius">CHIP MT Program</p>
             </div>
           </div>
           <div className="card-column-2-section">
             <div
-              className="card-column-4-section box-shadow font-title custom-secondary"
+              style={{backgroundImage: `url(${frontend})`, backgroundPosition: 'center', backgroundSize: 'cover'}}
+              className="card-column-4-section box-shadow font-title"
               onClick={onClickItem('FRONT_END')}
             >
-              SMBC BANK (Front End)
+              <p className="bg-gold-t wrapped-radius">SMBC BANK (Front End)</p>
             </div>
-            <div className="card-column-4-section box-shadow font-title custom-secondary">SMBC BANK (Back End)</div>
+             <div
+              style={{backgroundImage: `url(${logoJenius})`, backgroundPosition: 'center', backgroundSize: 'cover'}}
+              className="card-column-4-section box-shadow font-title black"
+              onClick={onClickItem('BACK_END')}
+            >
+              <p className="bg-gold-t wrapped-radius">SMBC BANK (Back End)</p>
+            </div>
           </div>
         </>
         :
@@ -50,6 +60,7 @@ const PastWorks = ({onHover}) => {
           { content === 'RELIEF_OPS' && (<ReliefOpsContent setPreview={setPreview} /> )}
           { content === 'CHIP' && (<ChipContent setPreview={setPreview} /> )}
           { content === 'FRONT_END' && (<FrontendContent setPreview={setPreview} /> )}
+          { content === 'BACK_END' && (<BackendContent setPreview={setPreview} /> )}
         </> 
       }
     </div>

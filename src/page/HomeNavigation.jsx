@@ -23,6 +23,10 @@ class HomeNavigation extends React.PureComponent {
     this.state = this.initialState;
   }
 
+  componentDidMount() {
+    this.setState({ ...this.initialState, isSummarySection: true})
+  }
+
   render() {
     const {
       isSummarySection,
