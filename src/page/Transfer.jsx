@@ -4,9 +4,10 @@ import CustomerForm from './CustomerForm';
 import Customer from '../component/Customer';
 import './CustomerForm.css';
 
-const Transfer = () => {
+const Transfer = ({onHover}) => {
   const [customers, setCustomers] = React.useState([]);
   const [transactions, setTransactions] = React.useState([]);
+
   const BASE_URL = 'http://localhost:8080';
   const CUSTOMER_END_POINT = '/customers';
 
@@ -34,11 +35,15 @@ const Transfer = () => {
   }, [transactions]);
 
   return (
-    <div className='content-column'>
+    <div className={`content-column ${onHover ? 'blur' : ''}`}>
       <CustomerForm onSubmitCustomer={ (customerData) => createCustomer(customerData) }/>
       <div className='customer-content'>
-        <Customer customer={customers[0]} targetAccount={customers[1]?.accountNo} setTransactions={setTransactions} transactions={transactions}/>
-        <Customer customer={customers[1]} targetAccount={customers[0]?.accountNo} setTransactions={setTransactions} transactions={transactions}/>
+        <Customer customer={customers[0]} targetAccount={customers[1]?.accountNo} 
+          setTransactions={setTransactions} transactions={transactions}
+        />
+        <Customer customer={customers[1]} targetAccount={customers[0]?.accountNo}
+          setTransactions={setTransactions} transactions={transactions}
+        />
       </div>
     </div>
   )

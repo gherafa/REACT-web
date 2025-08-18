@@ -59,7 +59,7 @@ const SkillsContent = () => {
 
 
   return (
-     <div className="single-card-content bg-transparent box-shadow">
+     <div className="single-card-content box-shadow">
       {isModalShown ?
         <div className='modal-content bg-transparent'>
           <img src={closeIcon} width="40" height="40" className='top-right-element' onClick={onClickItem('')}/>
@@ -69,15 +69,29 @@ const SkillsContent = () => {
           <header className="header-top custom-secondary"> Technical Skills </header>
           <p>Click on each icon for technical skill description</p>
           <div className='divided-content'>
-            <div className='small-card bg-transparent'>
-                <img src={nodeIcon} width="150" height="150" className='image-clickable' onClick={onClickItem('react')}/>
-                <img src={javaIcon} width="150" height="150" className='image-clickable' onClick={onClickItem('java')}/>
-                <img src={pythonIcon} width="150" height="150" className='image-clickable' onClick={onClickItem('python')}/>
+            <div className='small-card'>
+              <div className='small-box'>
+                <img src={nodeIcon} className='image-clickable' onClick={onClickItem('react')}/>
+                <p style={{textAlign: 'center'}}>JAVASCRIPT</p> 
+              </div>
+              <div className='small-box'>
+                <img src={javaIcon} className='image-clickable' onClick={onClickItem('java')}/>
+                <p style={{textAlign: 'center'}}>JAVA</p>
+              </div>
+              <div className='small-box'>
+                <img src={pythonIcon} className='image-clickable' onClick={onClickItem('python')}/>
+                <p style={{textAlign: 'center'}}>PYTHON</p>
+              </div>
             </div>
-            <div  className='small-card bg-transparent'>
-                {/* <img src={reactIcon} width="150" height="150" className='image-clickable' onClick={onClickItem('nodejs')}/> */}
-                <img src={mongoDb} width="200" height="150" className='image-clickable' onClick={onClickItem('database')}/>
-                <img src={kubernetesIcon} width="200" height="150" className='image-clickable' onClick={onClickItem('container')}/>
+            <div  className='small-card'>
+              <div className='small-box'>
+                <img src={mongoDb} className='image-clickable' onClick={onClickItem('database')}/>
+                <p style={{textAlign: 'center'}}>DATABASE MANAGEMENT</p>
+              </div>
+              <div className='small-box'>
+                <img src={kubernetesIcon} className='image-clickable' onClick={onClickItem('container')}/>
+                <p style={{textAlign: 'center'}}>CONTAINER AND PIPELINE</p>
+              </div>
             </div>
           </div>
         </>

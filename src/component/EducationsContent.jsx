@@ -12,7 +12,7 @@ const EducationsContent = () => {
       <header className="header-top custom-secondary"> Educations Background </header>
         <br />
         <div style={{textAlign: "center"}}>
-          <p style={{fontSize: '22px'}}>University of Padjadjaran</p>
+          <p style={{fontSize: '22px'}}><strong>University of Padjadjaran</strong></p>
           <p style={{fontSize: '18px'}}>Faculty of Science</p>
           <p style={{fontSize: '18px'}}>GPA 3.4 / 4.0</p>
         </div>
@@ -20,8 +20,8 @@ const EducationsContent = () => {
       <header className="header-top custom-secondary"> Languages Proficiency </header>
         <br />
         <div style={{textAlign: 'center'}}>
-          <p>English</p>
-          <p>Japanese</p>
+          <p><strong>English</strong>: Intermediate Level</p>
+          <p><strong>Japanese</strong>: Conversational Level</p>
         </div>
     </div>
   )

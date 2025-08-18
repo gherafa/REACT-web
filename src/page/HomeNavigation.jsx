@@ -44,45 +44,45 @@ class HomeNavigation extends React.PureComponent {
           <div className="content-navigation">
             <div
               onClick={() => this.setState({ ...this.initialState, isSummarySection: !isSummarySection })}
-              className="home-navigation-item-short box-shadow font-header"
+              className="home-navigation-item-short box-shadow"
               style={ isSummarySection ? {backgroundColor: 'goldenrod', width: '98%'} : {}}
             >
-              SUMMARY
+              <a>SUMMARY</a>
             </div>
             <div
               onClick={() => this.setState({ ...this.initialState, isExperienceSection: !isExperienceSection })}
-              className="home-navigation-item-short box-shadow font-header"
+              className="home-navigation-item-short box-shadow"
               style={ isExperienceSection ? {backgroundColor: 'goldenrod', width: '98%'} : {}}
             >
-              EXPERIENCES
+              <a>EXPERIENCES</a>
             </div>
             <div
               onClick={() => this.setState({ ...this.initialState, isEducationContent: !isEducationContent })}
-              className="home-navigation-item-short box-shadow font-header"
+              className="home-navigation-item-short box-shadow"
               style={ isEducationContent ? {backgroundColor: 'goldenrod', width: '98%'} : {}}
             >
-              EDUCATIONS
+              <a>EDUCATIONS</a>
             </div>
             <div
               onClick={() => this.setState({ ...this.initialState, isStrengthsContent: !isStrengthsContent })}
-              className="home-navigation-item-short box-shadow font-header"
+              className="home-navigation-item-short box-shadow"
               style={ isStrengthsContent ? {backgroundColor: 'goldenrod', width: '98%'} : {}}
             >
-              STRENGTHS
+              <a>STRENGTHS</a>
             </div>
             <div
               onClick={() => this.setState({ ...this.initialState, isSkillsContent: !isSkillsContent })}
-              className="home-navigation-item-short box-shadow font-header"
+              className="home-navigation-item-short box-shadow"
               style={ isSkillsContent ? {backgroundColor: 'goldenrod', width: '98%'} : {}}
             >
-              SKILLS
+              <a>SKILLS</a>
             </div>
             <div
               onClick={() => this.setState({ ...this.initialState, isContributionsContent: !isContributionsContent })}
-              className="home-navigation-item-short box-shadow font-header"
+              className="home-navigation-item-short box-shadow"
               style={ isContributionsContent ? {backgroundColor: 'goldenrod', width: '98%'} : {}}
             >
-              CONTRIBUTIONS
+              <a>CONTRIBUTIONS</a>
             </div>
           </div>
         </div>

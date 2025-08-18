@@ -30,23 +30,24 @@ const Customer = ({ customer, targetAccount, setTransactions, transactions }) =>
     }
   };
 
+  async function fetchTransactions() {
+      const response =  await axios.get(`${BASE_URL}${FETCH_TRANSACTION}`);
+
+      setTransactionData(response.data);
+  };
+
   React.useEffect(() => {   
-    async function fetchTransactions() {
-       const response =  await axios.get(`${BASE_URL}${FETCH_TRANSACTION}`);
-
-       setTransactionData(response.data);
-    }
-
     if (transactions.length > 0) {
       fetchTransactions();
     }
   }, [transactions]);
 
+
   return (
      <div className='customer-information'>
         { customer ?  
           <div className="customer-card">
-            <div className="customer-name">{customer.name}</div>
+            <a className="customer-name adjust-center">{customer.name}</a>
             <div className="customer-info">
                 <span className='font-header'>Account No: {customer.accountNo}</span>
                 <span className='font-header'>Balance: ${customer.balance}</span>
@@ -68,7 +69,7 @@ const Customer = ({ customer, targetAccount, setTransactions, transactions }) =>
           {transactionData.length === 0 ? (
             <div className="empty-table">
               <div className="empty-icon">📭</div>
-              <div className="empty-message">No Records Found.</div>
+              <a className="empty-message">No Records Found.</a>
             </div>
           ) : (
             <div>

@@ -8,6 +8,7 @@ import React from 'react';
 import AppStyle from './App.styles';
 import NavbarPopup from './component/navbar/NavbarPopup';
 import Transfer from './page/Transfer';
+import AboutPage from './page/About';
 
 const App = () => {
   const [onHover, setOnHover] = React.useState(false);
@@ -18,39 +19,39 @@ const App = () => {
       <ul className="navigation-bar">
         <img src={gIcon} width="50" height="50" className='image'/>
         <li>
-          <Link className='navigation-link white custom-bg-secondary'
+          <Link className='navigation-link'
             to="/"
             onMouseEnter={() => {setOnHover(true); setHoveredContent('HOME')}}
             onMouseLeave={() => setOnHover(false)}
           >
-            HOME
+            <a>HOME</a>
           </Link>
         </li>
         <li>
-          <Link className='navigation-link white custom-bg-secondary'
+          <Link className='navigation-link'
             to="/pastProject"
             onMouseEnter={() => {setOnHover(true); setHoveredContent('PAST_PROJECTS')}}
             onMouseLeave={() => setOnHover(false)}
           >
-            PAST PROJECTS
+            <a>PAST PROJECTS</a>
           </Link>
         </li>
          <li>
-          <Link className='navigation-link white custom-bg-secondary'
+          <Link className='navigation-link'
             to="/myWorks"
             onMouseEnter={() => {setOnHover(true); setHoveredContent('MY_WORKS')}}
             onMouseLeave={() => setOnHover(false)}
           >
-            TRANSFER SIMULATION
+            <a>TRANSFER SIMULATION</a>
           </Link>
         </li>
          <li>
-          <Link className='navigation-link white custom-bg-secondary'
-            to="/profile"
+          <Link className='navigation-link'
+            to="/about"
             onMouseEnter={() => {setOnHover(true); setHoveredContent('ABOUT')}}
             onMouseLeave={() => setOnHover(false)}
           >
-            ABOUT THIS APP
+            <a>ABOUT THIS APP & ME</a>
           </Link>
         </li>
       </ul>
@@ -62,8 +63,8 @@ const App = () => {
      <Routes>
       <Route path="/" element={<HomeNavigation onHover={onHover}/>} />
       <Route path="/pastProject" element={<PastWorks onHover={onHover}/>} />
-      <Route path="/myWorks" element={<Transfer />} />
-      <Route path="/profile" element={<p>profile</p>} />
+      <Route path="/myWorks" element={<Transfer onHover={onHover}/>} />
+      <Route path="/about" element={<AboutPage onHover={onHover}/>} />
     </Routes>
    </div>
   </div>)

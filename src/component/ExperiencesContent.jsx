@@ -1,8 +1,8 @@
 const ExperiencesContent = () => (
   <div className="single-card-long-content bg-transparent box-shadow padding-20">
     <ul>
-      <header className="header-top">SOFTWARE ENGINEER</header>
-      <header className="sub-heading custom-secondary">SMBC Digital Bank </header>
+      <h1 className="header-top">SOFTWARE ENGINEER</h1>
+      <h2 className="sub-heading custom-secondary">SMBC Digital Bank </h2>
       <li>
         <strong>Agile Way of Working:</strong> Participated in all SCRUM ceremonies to ensure a
         more efficient and collaborative development process, achieved 100% sprint
@@ -46,8 +46,8 @@ const ExperiencesContent = () => (
         and a 119% expansion of the loan portfolio.
       </li>
       <br />
-      <header className="header-top">SOFTWARE ENGINEER</header>
-      <header className="sub-heading custom-secondary">Relief-Ops Research Team </header>
+      <h1 className="header-top">SOFTWARE ENGINEER</h1>
+      <h2 className="sub-heading custom-secondary">Relief-Ops Research Team </h2>
       <li>
         Gathered, processed, and prepared data from diverse sources and formats,
         producing insightful visualizations that enhanced analysis of disaster risk and
