@@ -75,7 +75,7 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   align-content: center;
-  width: 70%;
+  width: 80%;
   justify-content: center
 }
 
@@ -106,12 +106,14 @@
   color: #444;
 }
 
-@media (min-width: 640px) {
+@media (max-width: 768px) {
   .about-title { font-size: 2.5rem; }
   .about-intro { font-size: 1.1rem; }
   .card-title { font-size: 1.3rem; }
   .about-footer { font-size: 1.1rem; }
   .key-areas-title { font-size: 1.8rem; }
+  .key-areas-single ul{ padding: 0px; }
+  .key-areas-single a{ font-size: 11px; }
 }
 
 @media (min-width: 768px) {

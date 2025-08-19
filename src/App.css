@@ -46,6 +46,7 @@
   padding-top: 1%;
   display: flex;
   justify-content: center;
+  align-content: center;
 }
 
 .navigation-bar {
@@ -53,6 +54,8 @@
   list-style: none;
   justify-content: center;
   height: 20%;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .custom-bg-primary {
@@ -79,7 +82,7 @@
 }
 
 .navigation-link {
-  padding: 9px 25px;
+  padding: 1px 1px;
   transition: all 0.3s ease 0s;
   border: none;
   border-radius: 30px;
@@ -91,94 +94,13 @@
 .navigation-link a {
   text-decoration: none;
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 650;
   color: #333;
   transition: color 0.3s;
 }
 
 .navigation-link a:hover {
   color: goldenrod;
-}
-
-@media (max-width: 600px) {
-  .navigation-link a { font-size: 0.5rem; padding: 0px 0px !important;}
-  .content-navigation a { font-size: 0.6rem !important;}
-  .single-card-content-split header{ font-size: 1.2rem;}
-  .single-card-content-split p{ font-size: 12px !important;}
-  .split-card-left img {width: 120px; height: 170px; margin-right: 1px !important;}
-  .split-card-left {margin-right: 40px !important;}
-  .single-card-long-content h1 { font-size: 16px !important;}
-  .single-card-long-content h2 { font-size: 12px !important;}
-  .single-card-long-content li { font-size: 9px !important;}
-  .single-card-content header{ font-size: 20px !important;}
-  .card-content header{ font-size: 16px !important;}
-  .single-card-content li{ font-size: 12px !important;}
-  .card-content ul { padding: 0px !important;}
-  .card-content li{ font-size: 8px !important;}
-  .card-content header{ font-size: 11px !important;}
-  .customer-card a{ font-size: 13px !important;}
-  .customer-card span{ font-size: 12px !important;}
-  .customer-card button{ font-size: 7px !important;}
-  .transaction-item span{ font-size: 6px !important;}
-  .customer-form label{ font-size: 8px !important;}
-  .customer-form button{ font-size: 7px !important;}
-  .information-card a{ font-size: 11px !important;}
-  .card-column-2-section p{ font-size: 14px !important;}
-  .small-card p{ font-size: 12px !important;}
-  .small-card img{width: 100px; height: 50px !important;}
-  .single-card-content p{ font-size: 12px}
-}
-
-@media (min-width: 768px) {
-  .navigation-link a { font-size: 1.1rem; padding: 0px 0px !important;}
-  .content-navigation a { font-size: 1.1rem !important;}
-  .single-card-content-split header{ font-size: 2rem !important;}
-  .single-card-content-split p{ font-size: 16px !important;}
-  .split-card-left img {width: 180px; height: 250px !important;}
-  .single-card-long-content h1 { font-size: 25px !important;}
-  .single-card-long-content h2 { font-size: 20px !important;}
-  .single-card-long-content li { font-size: 14px !important;}
-  .single-card-content header{ font-size: 25px !important;}
-  .single-card-content li{ font-size: 16px !important;}
-  .card-content header{ font-size: 25px !important;}
-  .card-content li{ font-size: 16px !important;}
-  .customer-card a{ font-size: 18px !important;}
-  .customer-card span{ font-size: 16px !important;}
-  .customer-card button{ font-size: 12px !important;}
-  .transaction-item span{ font-size: 10px !important;}
-  .customer-form label{ font-size: 12px !important;}
-  .customer-form button{ font-size: 11px !important;}
-  .information-card a{ font-size: 16px !important;}
-  .card-column-2-section p{ font-size: 20px !important;}
-  .small-card p{ font-size: 16px !important;}
-  .small-card img{width: 150px; height: 100px !important;}
-  .single-card-content p{ font-size: 16px}
-}
-
-@media (min-width: 1024px) {
-  .navigation-link a { font-size: 1.2rem; }
-  .content-navigation a { font-size: 1.4rem !important;}
-  .single-card-content-split header{ font-size: 2.2rem !important;}
-  .single-card-content-split p{ font-size: 20px !important;}
-  .split-card-left img {width: 310px; height: 390px !important;}
-  .single-card-long-content h1 { font-size: 30px !important;}
-  .single-card-long-content h2 { font-size: 25px !important;}
-  .single-card-long-content li { font-size: 18px !important;}
-  .single-card-content header{ font-size: 30px !important;}
-  .single-card-content li{ font-size: 20px !important;}
-  .card-content header{ font-size: 30px !important;}
-  .card-content li{ font-size: 20px !important;}
-  .customer-card a{ font-size: 25px !important;}
-  .customer-card span{ font-size: 20px !important;}
-  .customer-card button{ size: 25px !important;}
-  .transaction-item span{ font-size: 14px !important;}
-  .customer-form label{ font-size: 16px !important;}
-  .customer-form button{ font-size: 15px !important;}
-  .information-card a{ font-size: 20px !important;}
-  .card-column-2-section p{ font-size: 30px !important;}
-  .small-card p{ font-size: 20px !important;}
-  .small-card img{width: 200px; height: 150 !important;}
-  .single-card-content p{ font-size: 20px}
 }
 
 .white {
@@ -527,7 +449,7 @@
   display: flex;
   height: 60%;
   width: 80%;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
@@ -611,14 +533,14 @@
   display: flex;
   width: 100%;
   height: 100%;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
 .modal-content {
   display: flex;
-  width: 80%;
+  width: 100%;
   height: 80%;
   justify-content: space-around;
   flex-direction: column;
@@ -632,10 +554,7 @@
   height: 45%;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
   flex-direction: row;
-  flex-wrap: wrap;
-  gap: 0.2rem;
 }
 
 .top-right-element {
@@ -688,17 +607,19 @@
 }
 
 .small-box {
+  display: flex;
   width: 25%;
   height: 90%;
   align-items: center;
   justify-content: center;
   text-align: center;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .small-box:hover {
- background-color: rgba(0, 174, 255, 0.5);
- transition: all 0.5s ease 0s;
- border-radius: 50%;
+  transition: all 0.5s ease 0s;
+  transform: translateY(-5px);
 }
 
 .font-description {
@@ -771,4 +692,111 @@
 
 .bg-navbar {
   background-color: hsla(0, 0%, 83%, 0.5)
+}
+
+@media (max-width: 768px) {
+  .navigation-bar img {width: 25px; height: 25px;}
+  .navigation-link a { font-size: 0.6rem; padding: 0px 0px !important;}
+  .content-navigation a { font-size: 0.6rem !important;}
+  .single-card-content-split {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .split-card-left{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 120px;
+  }
+  .split-card-right{
+    width: 100%;
+    padding: 10px;
+  }
+  .split-card-right p { margin: auto };
+  .single-card-content-split header{ font-size: 1.2rem;}
+  .single-card-content-split p{ font-size: 12px !important;}
+  .split-card-left img {width: 120px; height: 170px; margin-right: 1px !important;}
+  .split-card-left {margin-right: 40px !important;}
+  .single-card-long-content h1 { font-size: 16px !important;}
+  .single-card-long-content h2 { font-size: 12px !important;}
+  .single-card-long-content li { font-size: 9px !important;}
+  .single-card-long-content ul { padding: 0px !important;}
+  .single-card-content ul { padding: 20px !important;}
+  .single-card-content header{ font-size: 20px !important;}
+  .card-content header{ font-size: 16px !important;}
+  .single-card-content li{ font-size: 12px !important;}
+  .card-content ul { padding: 0px !important;}
+  .card-content li{ font-size: 8px !important;}
+  .card-content header{ font-size: 11px !important;}
+  .customer-card a{ font-size: 13px !important;}
+  .customer-card span{ font-size: 12px !important;}
+  .customer-card button{ font-size: 7px !important;}
+  .transaction-item span{ font-size: 6px !important;}
+  .customer-form label{ font-size: 8px !important;}
+  .customer-form button{ font-size: 7px !important;}
+  .information-card a{ font-size: 11px !important;}
+  .card-column-2-section p{ font-size: 14px !important;}
+  .small-card p{ font-size: 12px !important;}
+  .small-card img{width: 100px; height: 50px !important;}
+  .small-card {flex-direction: column !important;}
+  .single-card-content p{ font-size: 12px !important;}
+  .modal-content img{width: 20px; height: 20px !important;}
+}
+
+@media (min-width: 768px) {
+  .navigation-bar img {width: 30px; height: 30px;}
+  .navigation-link a { font-size: 1.1rem; padding: 0px 0px !important;}
+  .content-navigation a { font-size: 1.1rem !important;}
+  .single-card-content-split header{ font-size: 2rem !important;}
+  .single-card-content-split p{ font-size: 16px !important;}
+  .split-card-left img {width: 180px; height: 250px !important;}
+  .single-card-long-content h1 { font-size: 25px !important;}
+  .single-card-long-content h2 { font-size: 20px !important;}
+  .single-card-long-content li { font-size: 14px !important;}
+  .single-card-content header{ font-size: 25px !important;}
+  .single-card-content li{ font-size: 16px !important;}
+  .card-content header{ font-size: 25px !important;}
+  .card-content li{ font-size: 16px !important;}
+  .customer-card a{ font-size: 18px !important;}
+  .customer-card span{ font-size: 16px !important;}
+  .customer-card button{ font-size: 12px !important;}
+  .transaction-item span{ font-size: 10px !important;}
+  .customer-form label{ font-size: 12px !important;}
+  .customer-form button{ font-size: 11px !important;}
+  .information-card a{ font-size: 16px !important;}
+  .card-column-2-section p{ font-size: 20px !important;}
+  .small-card p{ font-size: 16px !important;}
+  .small-card img{width: 150px; height: 100px !important;}
+  .single-card-content p{ font-size: 16px}
+  .modal-content img{width: 30px; height: 30px !important;}
+}
+
+@media (min-width: 1024px) {
+  .navigation-bar img {width: 45px; height: 45px;}
+  .navigation-link a { font-size: 1.2rem; }
+  .content-navigation a { font-size: 1.4rem !important;}
+  .single-card-content-split header{ font-size: 2.2rem !important;}
+  .single-card-content-split p{ font-size: 20px !important;}
+  .split-card-left img {width: 310px; height: 390px !important;}
+  .single-card-long-content h1 { font-size: 30px !important;}
+  .single-card-long-content h2 { font-size: 25px !important;}
+  .single-card-long-content li { font-size: 18px !important;}
+  .single-card-content header{ font-size: 30px !important;}
+  .single-card-content li{ font-size: 20px !important;}
+  .card-content header{ font-size: 30px !important;}
+  .card-content li{ font-size: 20px !important;}
+  .customer-card a{ font-size: 25px !important;}
+  .customer-card span{ font-size: 20px !important;}
+  .customer-card button{ size: 25px !important;}
+  .transaction-item span{ font-size: 14px !important;}
+  .customer-form label{ font-size: 16px !important;}
+  .customer-form button{ font-size: 15px !important;}
+  .information-card a{ font-size: 20px !important;}
+  .card-column-2-section p{ font-size: 30px !important;}
+  .small-card p{ font-size: 20px !important;}
+  .small-card img{width: 200px; height: 150 !important;}
+  .single-card-content p{ font-size: 20px}
+  .modal-content img{width: 40px; height: 40px !important;}
 }

@@ -9,6 +9,7 @@ import AppStyle from './App.styles';
 import NavbarPopup from './component/navbar/NavbarPopup';
 import Transfer from './page/Transfer';
 import AboutPage from './page/About';
+import getNavbarStyle from './App.styles';
 
 const App = () => {
   const [onHover, setOnHover] = React.useState(false);
@@ -17,9 +18,9 @@ const App = () => {
   return ( <div className="App">
     <header className="custom-navbar sticky-top bg-navbar">
       <ul className="navigation-bar">
-        <img src={gIcon} width="50" height="50" className='image'/>
+        <img src={gIcon} className='image'/>
         <li>
-          <Link className='navigation-link bg-transparent-grey'
+          <Link className='navigation-link'
             to="/"
             onMouseEnter={() => {setOnHover(true); setHoveredContent('HOME')}}
             onMouseLeave={() => setOnHover(false)}
@@ -28,7 +29,7 @@ const App = () => {
           </Link>
         </li>
         <li>
-          <Link className='navigation-link bg-transparent-grey'
+          <Link className='navigation-link'
             to="/pastProject"
             onMouseEnter={() => {setOnHover(true); setHoveredContent('PAST_PROJECTS')}}
             onMouseLeave={() => setOnHover(false)}
@@ -37,16 +38,16 @@ const App = () => {
           </Link>
         </li>
          <li>
-          <Link className='navigation-link bg-transparent-grey'
+          <Link className='navigation-link'
             to="/myWorks"
             onMouseEnter={() => {setOnHover(true); setHoveredContent('MY_WORKS')}}
             onMouseLeave={() => setOnHover(false)}
           >
-            <a>TRANSFER SIMULATION</a>
+            <a>SIMULATION</a>
           </Link>
         </li>
          <li>
-          <Link className='navigation-link bg-transparent-grey'
+          <Link className='navigation-link'
             to="/about"
             onMouseEnter={() => {setOnHover(true); setHoveredContent('ABOUT')}}
             onMouseLeave={() => setOnHover(false)}
@@ -56,7 +57,7 @@ const App = () => {
         </li>
       </ul>
     </header>
-    <div style={ onHover ? AppStyle.navbarHoverOpen : AppStyle.navbarHoverClosed}>
+    <div style={ getNavbarStyle(onHover)} >
      {onHover && <NavbarPopup content={hoveredContent} />}   
     </div>
    <div>

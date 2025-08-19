@@ -62,7 +62,7 @@ const SkillsContent = () => {
      <div className="single-card-content box-shadow">
       {isModalShown ?
         <div className='modal-content bg-transparent'>
-          <img src={closeIcon} width="40" height="40" className='top-right-element' onClick={onClickItem('')}/>
+          <img src={closeIcon} className='top-right-element' onClick={onClickItem('')}/>
           {contentMatcher(context)}
         </div> :
         <>

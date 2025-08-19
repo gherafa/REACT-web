@@ -1,7 +1,7 @@
 const ComponentStyle = {
     contentList: {
       textAlign: 'justify',
-      padding: '10px'
+      padding: '0px',
     },
     headerStyle: {
       fontWeight: 500,

@@ -12,7 +12,7 @@ const EducationsContent = () => {
       <header className="header-top custom-secondary"> Educations Background </header>
         <br />
         <div style={{textAlign: "center"}}>
-          <p style={{fontSize: '22px'}}><strong>University of Padjadjaran</strong></p>
+          <p style={{fontSize: '18px'}}><strong>University of Padjadjaran</strong></p>
           <p style={{fontSize: '18px'}}>Faculty of Science</p>
           <p style={{fontSize: '18px'}}>GPA 3.4 / 4.0</p>
         </div>
