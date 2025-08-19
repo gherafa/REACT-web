@@ -8,7 +8,7 @@ const Transfer = ({onHover}) => {
   const [customers, setCustomers] = React.useState([]);
   const [transactions, setTransactions] = React.useState([]);
 
-  const BASE_URL = 'http://localhost:8080';
+  const BASE_URL = 'https://portfolio-gheo.up.railway.app';
   const CUSTOMER_END_POINT = '/customers';
 
   async function createCustomer(customerData) {
