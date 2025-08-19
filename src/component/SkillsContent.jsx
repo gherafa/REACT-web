@@ -67,7 +67,7 @@ const SkillsContent = () => {
         </div> :
         <>
           <header className="header-top custom-secondary"> Technical Skills </header>
-          <p>Click on each icon for technical skill description</p>
+          <p style={{textAlign: 'justify'}}>Click on each icon for technical skill description</p>
           <div className='divided-content'>
             <div className='small-card'>
               <div className='small-box'>

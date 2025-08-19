@@ -15,11 +15,11 @@ const App = () => {
   const [hoveredContent, setHoveredContent] = React.useState('');
 
   return ( <div className="App">
-    <header className="custom-navbar sticky-top">
+    <header className="custom-navbar sticky-top bg-navbar">
       <ul className="navigation-bar">
         <img src={gIcon} width="50" height="50" className='image'/>
         <li>
-          <Link className='navigation-link'
+          <Link className='navigation-link bg-transparent-grey'
             to="/"
             onMouseEnter={() => {setOnHover(true); setHoveredContent('HOME')}}
             onMouseLeave={() => setOnHover(false)}
@@ -28,7 +28,7 @@ const App = () => {
           </Link>
         </li>
         <li>
-          <Link className='navigation-link'
+          <Link className='navigation-link bg-transparent-grey'
             to="/pastProject"
             onMouseEnter={() => {setOnHover(true); setHoveredContent('PAST_PROJECTS')}}
             onMouseLeave={() => setOnHover(false)}
@@ -37,7 +37,7 @@ const App = () => {
           </Link>
         </li>
          <li>
-          <Link className='navigation-link'
+          <Link className='navigation-link bg-transparent-grey'
             to="/myWorks"
             onMouseEnter={() => {setOnHover(true); setHoveredContent('MY_WORKS')}}
             onMouseLeave={() => setOnHover(false)}
@@ -46,12 +46,12 @@ const App = () => {
           </Link>
         </li>
          <li>
-          <Link className='navigation-link'
+          <Link className='navigation-link bg-transparent-grey'
             to="/about"
             onMouseEnter={() => {setOnHover(true); setHoveredContent('ABOUT')}}
             onMouseLeave={() => setOnHover(false)}
           >
-            <a>ABOUT THIS APP & ME</a>
+            <a>ABOUT</a>
           </Link>
         </li>
       </ul>
