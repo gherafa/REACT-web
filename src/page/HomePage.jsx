@@ -1,6 +1,6 @@
 import React from 'react';
-import Contact from '../component/Contact';
-import ContactForm from './ContactForm';
+import Contact from '../component/Customer';
+import ContactForm from './CustomerForm';
 import mockContactData from './MockContactData';
 
 class HomePage extends React.PureComponent {
