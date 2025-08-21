@@ -1,4 +1,4 @@
-.customer-form {
+/* .customer-form {
   background: #fff;
   padding: 20px 25px;
   border-radius: 12px;
@@ -8,6 +8,24 @@
   font-family: Arial, sans-serif;
   position: absolute;
   top: 15%;
+} */
+
+.form-container {
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: flex-start;   /* align from top */
+  padding-top: 10%;          /* replaces top:15% */
+  width: 100%;
+}
+
+/* The form */
+.customer-form {
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 12px;
+  width: 60%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  font-family: Arial, sans-serif;
 }
 
 .form-group {
@@ -61,5 +79,5 @@ input[type="text"]:focus {
   flex-direction: row;
   justify-content: space-between;
   align-items: top;
-  margin-top: 20%;
+  margin-top: 5%;
 }

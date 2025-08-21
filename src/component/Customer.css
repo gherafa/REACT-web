@@ -1,7 +1,7 @@
 .customer-information {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 40%;
   height: 100%;
   justify-content: center;
 }
@@ -27,7 +27,7 @@
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   font-family: Arial, sans-serif;
-  height: 80%;
+  height: 72%;
   width: 100%;
   margin-top: 30px;
 }
@@ -70,6 +70,7 @@
   font-family: Arial, sans-serif;
   font-size: 14px;
   transition: background 0.2s ease;
+  height: 95%;
 }
 
 .customer-card:hover {
