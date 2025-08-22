@@ -79,7 +79,7 @@ const Customer = ({ customer, targetAccount, setTransactions, transactions }) =>
                   className={`transaction-item ${transaction.description === 'DEPOSIT' ? 'in' : 'out'}`}
                 >
                   <span className="transaction-type">{transaction.transactionType}</span>
-                  <span className="transaction-amount">${transaction.amount}</span>
+                  <span className={`transaction-amount ${transaction.description === 'DEPOSIT' ? 'in' : 'out'}`}>${transaction.amount}</span>
                   <span className="transaction-desc">{transaction.description}</span>
                 </div>
               ))}

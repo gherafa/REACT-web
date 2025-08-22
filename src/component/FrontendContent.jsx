@@ -30,14 +30,14 @@ const FrontendContent = ({setPreview}) => {
           className="card-column-head box-shadow font-header" 
           onClick={() => {setContext('')}}
         >
-          Summary & Tech Stack
+          <a>Summary & Tech Stack</a>
         </div>
          <div 
           style={context === 'SNIPPETS' ? {borderRadius: '50%', background: 'goldenrod', transition: 'all 0.3s ease 0s'} : {}}
           className="card-column-head box-shadow font-header" 
           onClick={() => {setContext('SNIPPETS')}}
         >
-          Snippets
+          <a>Snippets</a>
         </div>
         <img src={closeIcon} width="40" height="40" className='top-right-relative' onClick={() => setPreview(false)}/>
       </div>

@@ -36,21 +36,21 @@ const ChipContent = ({setPreview}) => {
           className="card-column-head box-shadow font-header"
            onClick={() => {setContext('')}}
         >
-          CHIP MT Program
+          <a>CHIP MT Program</a>
         </div>
         <div 
           style={context === 'ACADEMY' ? {borderRadius: '50%', background: 'goldenrod', transition: 'all 0.3s ease 0s'} : {}}
           className="card-column-head box-shadow font-header" 
           onClick={() => {setContext('ACADEMY')}}
         >
-          Academy and In-class Training
+          <a>Academy and In-class Training</a>
         </div>
         <div 
           style={context === 'OJT' ? {borderRadius: '50%', background: 'goldenrod', transition: 'all 0.3s ease 0s'} : {}}
           className="card-column-head box-shadow font-header" 
           onClick={() => {setContext('OJT')}}
         >
-          On the Job Training (OJT)
+          <a>On the Job Training (OJT)</a>
         </div>
         <img src={closeIcon} width="40" height="40" className='top-right-relative' onClick={() => setPreview(false)}/>
       </div>

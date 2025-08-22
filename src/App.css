@@ -644,18 +644,20 @@
   display: flex;
   width: 100%;
   justify-content: center;
+  margin-bottom: auto;
 }
 
 .section-bar-body {
   display: flex;
   width: 100%;
-  height: 96%;
+  height: 90%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 1%;
   padding: 2%;
   padding-top: 5%;
+  align-content: center;
 }
 
 .section-bar-card {
@@ -670,9 +672,11 @@
 .section-bar-body-content {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
   margin: 5px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-bar-card:hover {
@@ -693,6 +697,19 @@
 
 .bg-navbar {
   background-color: hsla(0, 0%, 83%, 0.5)
+}
+
+.iframe-img {
+  display: flex;
+  height: 88%;
+  width: 98%;
+  justify-self: center;
+  margin-bottom: auto;
+  margin-top: 1%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #304D63;
+  border-radius: 10px;
 }
 
 @media (max-width: 768px) {
@@ -744,6 +761,20 @@
   .small-card {flex-direction: column !important;}
   .single-card-content p{ font-size: 12px !important;}
   .modal-content img{width: 20px; height: 20px !important;}
+  .card-column-head a{ font-size: 12px !important;}
+  .card-column-3-section p{ font-size: 12px !important;}
+  .card-column-3-section header{ font-size: 14px !important;}
+  .card-column-3-section ul{ font-size: 12px !important;}
+  .card-column-6-section-item p{ font-size: 8px !important;} 
+  .card-column-6-section-item header{ font-size: 10px !important;} 
+  .card-column-6-section-item img{width: 120px; height: 80px !important;}
+  .card-column-6-section-item {flex-direction: column !important;}
+  .section-bar-body-content p{ font-size: 12px !important;}
+  .section-bar-body-content header{ font-size: 15px !important;}
+  .section-bar-body-content img{width: 430px; height: 200px !important;}
+  .section-bar a{ font-size: 12px !important;}
+  .card-column-2-section-high-container p{ font-size: 12px !important;}
+  .card-column-2-section-high-container img{width: 120px; height: 350px !important;}
 }
 
 @media (min-width: 768px) {
@@ -772,6 +803,17 @@
   .small-card img{width: 150px; height: 100px !important;}
   .single-card-content p{ font-size: 16px}
   .modal-content img{width: 30px; height: 30px !important;}
+  .card-column-head a{ font-size: 17px !important;}
+  .card-column-3-section p{ font-size: 14px !important;}
+  .card-column-3-section header{ font-size: 18px !important;}
+  .card-column-3-section ul{ font-size: 14px !important;}
+  .card-column-6-section-item p{ font-size: 11px !important;} 
+  .card-column-6-section-item header{ font-size: 14px !important;} 
+  .card-column-6-section-item img{width: 150px; height: 100px !important;}
+  .section-bar-body-content p{ font-size: 14px !important;}
+  .section-bar-body-content header{ font-size: 18px !important;}
+  .section-bar-body-content img{width: 400px; height: 200px !important;}
+  .section-bar a{ font-size: 14px !important;}
 }
 
 @media (min-width: 1024px) {
@@ -800,4 +842,16 @@
   .small-card img{width: 200px; height: 150 !important;}
   .single-card-content p{ font-size: 20px}
   .modal-content img{width: 40px; height: 40px !important;}
+  .card-column-head a{ font-size: 21px !important;}
+  .card-column-3-section p{ font-size: 16px !important;}
+  .card-column-3-section header{ font-size: 23px !important;}
+  .card-column-3-section ul{ font-size: 16px !important;}
+  .card-column-6-section-item p{ font-size: 14px !important;} 
+  .card-column-6-section-item header{ font-size: 16px !important;} 
+  .card-column-6-section-item img{width: 250px; height: 200px !important;}
+  .section-bar-body-content p{ font-size: 16px !important;}
+  .section-bar-body-content header{ font-size: 20px !important;}
+  .section-bar-body-content img{width: 400px; height: 300px !important;}
+  .section-bar-body-content {flex-direction: row !important; justify-content: space-between;}
+  .section-bar a{ font-size: 16px !important;}
 }

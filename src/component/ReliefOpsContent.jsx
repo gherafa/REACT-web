@@ -38,21 +38,21 @@ const ReliefOpsContent = ({setPreview}) => {
           className="card-column-head box-shadow font-header"
           onClick={() => {setIsProject(false); setIsResult(false); setContext('')}}
         >
-          Relief-Ops Research Team
+          <a>Relief-Ops Research Team</a>
         </div>
         <div 
           style={isProject ? {borderRadius: '50%', background: 'goldenrod', transition: 'all 0.3s ease 0s'} : {}}
           className="card-column-head box-shadow font-header" 
           onClick={() => {setIsProject(true);  setIsResult(false); setContext('ACTIVITY')}}
         >
-          ACTIVITY
+          <a>ACTIVITY</a>
         </div>
         <div 
           style={isResult ? {borderRadius: '50%', background: 'goldenrod', transition: 'all 0.3s ease 0s'} : {}}
           className="card-column-head box-shadow font-header" 
           onClick={() => {setIsProject(false); setIsResult(true); setContext('RESULT')}}
         >
-          PROJECTS RESULT
+          <a>PROJECTS RESULT</a>
         </div>
         <img src={closeIcon} width="40" height="40" className='top-right-relative' onClick={() => setPreview(false)}/>
       </div>
