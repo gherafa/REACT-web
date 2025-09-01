@@ -8,7 +8,7 @@ const Transfer = ({onHover}) => {
   const [customers, setCustomers] = React.useState([]);
   const [transactions, setTransactions] = React.useState([]);
 
-  const BASE_URL = 'https://portfolio-gheo.up.railway.app';
+  const BASE_URL = 'https://java-app-transactions.onrender.com';
   const CUSTOMER_END_POINT = '/customers';
 
   async function createCustomer(customerData) {
@@ -26,10 +26,14 @@ const Transfer = ({onHover}) => {
 
   React.useEffect(() => {   
     async function fetchData() {
-      const response =  await axios.get(`${BASE_URL}${CUSTOMER_END_POINT}`);
+      try {
+        const response =  await axios.get(`${BASE_URL}${CUSTOMER_END_POINT}`);
 
-      setCustomers(response.data);
-    }
+        setCustomers(response.data);
+      } catch (error) {
+        console.log('error', error);
+      }
+    };
 
     fetchData();
   }, [transactions]);

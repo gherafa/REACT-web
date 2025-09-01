@@ -6,7 +6,7 @@ import React from 'react';
 const Customer = ({ customer, targetAccount, setTransactions, transactions }) => {
   const [transactionData, setTransactionData] = React.useState([]);
 
-  const BASE_URL = 'https://portfolio-gheo.up.railway.app';
+  const BASE_URL = 'https://java-app-transactions.onrender.com';
   const TRANSACTION_END_POINT = `/customers/transactions/${customer?.accountNo}/${targetAccount}`;
   const FETCH_TRANSACTION = `/customers/${customer?.accountNo}/transactions`;
 
